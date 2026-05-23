@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#060809"/>
+  <defs>
+    <pattern id="g" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0L0 0 0 60" fill="none" stroke="rgba(200,192,176,0.02)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g)"/>
+  <line x1="0" y1="0" x2="960" y2="380" stroke="rgba(180,175,165,0.04)" stroke-width="1"/>
+  <line x1="1920" y1="0" x2="960" y2="380" stroke="rgba(180,175,165,0.04)" stroke-width="1"/>
+  <line x1="1920" y1="1080" x2="960" y2="380" stroke="rgba(180,175,165,0.04)" stroke-width="1"/>
+  <line x1="0" y1="1080" x2="960" y2="380" stroke="rgba(180,175,165,0.04)" stroke-width="1"/>
+  <line x1="300" y1="0" x2="960" y2="380" stroke="rgba(180,175,165,0.04)" stroke-width="1"/>
+  <line x1="1620" y1="0" x2="960" y2="380" stroke="rgba(180,175,165,0.04)" stroke-width="1"/>
+  <line x1="1620" y1="1080" x2="960" y2="380" stroke="rgba(180,175,165,0.04)" stroke-width="1"/>
+  <line x1="300" y1="1080" x2="960" y2="380" stroke="rgba(180,175,165,0.04)" stroke-width="1"/>
+  <circle cx="960" cy="380" r="10" fill="rgba(200,195,185,0.06)"/>
+  <radialGradient id="vig" cx="50%" cy="50%" r="70%">
+    <stop offset="0%" stop-color="transparent"/>
+    <stop offset="100%" stop-color="rgba(0,0,0,0.75)"/>
+  </radialGradient>
+  <rect width="1920" height="1080" fill="url(#vig)"/>
+  <text x="960" y="1020" font-family="monospace" font-size="10"
+    fill="rgba(60,58,54,0.25)" text-anchor="middle" letter-spacing="4">ОБЪЕКТ №403 · Концовка IV</text>
+  <text x="960" y="1040" font-family="monospace" font-size="9"
+    fill="rgba(40,38,34,0.18)" text-anchor="middle">замените: assets/images/bg/ending_4_ob403.jpg</text>
+</svg>

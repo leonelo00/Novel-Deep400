@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#090808"/>
+  <rect x="2" y="2" width="1916" height="1076" fill="none" stroke="#1a1a2e" stroke-width="2"/>
+  <defs>
+    <pattern id="g" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0L0 0 0 60" fill="none" stroke="#111122" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g)"/>
+  <line x1="920" y1="440" x2="1000" y2="440" stroke="#8b1a1a" stroke-width="1" opacity="0.5"/>
+  <line x1="960" y1="400" x2="960" y2="480" stroke="#8b1a1a" stroke-width="1" opacity="0.5"/>
+  <circle cx="960" cy="440" r="30" fill="none" stroke="#8b1a1a" stroke-width="1" opacity="0.3"/>
+  <text x="960" y="560" font-family="monospace" font-size="18" fill="#3d3a36" text-anchor="middle" letter-spacing="4">ФОНОВОЕ ИЗОБРАЖЕНИЕ</text>
+  <text x="960" y="595" font-family="monospace" font-size="14" fill="#8b1a1a" text-anchor="middle" letter-spacing="2">КАБИНЕТ ВЛАСОВА</text>
+  <text x="960" y="630" font-family="monospace" font-size="11" fill="#2a2a3a" text-anchor="middle">Ветки Б и В</text>
+  <text x="960" y="658" font-family="monospace" font-size="10" fill="#1e1e2a" text-anchor="middle">замените: assets/images/bg/vlasov_office.jpg / .png / .gif / .mp4</text>
+  <path d="M20 20 L60 20 M20 20 L20 60" fill="none" stroke="#8b1a1a" stroke-width="1" opacity="0.3"/>
+  <path d="M1900 20 L1860 20 M1900 20 L1900 60" fill="none" stroke="#8b1a1a" stroke-width="1" opacity="0.3"/>
+  <path d="M20 1060 L60 1060 M20 1060 L20 1020" fill="none" stroke="#8b1a1a" stroke-width="1" opacity="0.3"/>
+  <path d="M1900 1060 L1860 1060 M1900 1060 L1900 1020" fill="none" stroke="#8b1a1a" stroke-width="1" opacity="0.3"/>
+</svg>

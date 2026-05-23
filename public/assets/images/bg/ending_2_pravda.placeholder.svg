@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#06090c"/>
+  <defs>
+    <pattern id="g" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0L0 0 0 60" fill="none" stroke="rgba(200,192,176,0.02)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g)"/>
+  <line x1="0" y1="320" x2="1920" y2="320" stroke="rgba(160,180,215,0.015)" stroke-width="1"/>
+  <line x1="0" y1="345" x2="1920" y2="345" stroke="rgba(160,180,215,0.018)" stroke-width="1"/>
+  <line x1="0" y1="370" x2="1920" y2="370" stroke="rgba(160,180,215,0.021)" stroke-width="1"/>
+  <line x1="0" y1="395" x2="1920" y2="395" stroke="rgba(160,180,215,0.024)" stroke-width="1"/>
+  <line x1="0" y1="420" x2="1920" y2="420" stroke="rgba(160,180,215,0.027)" stroke-width="1"/>
+  <line x1="0" y1="445" x2="1920" y2="445" stroke="rgba(160,180,215,0.030)" stroke-width="1"/>
+  <line x1="0" y1="470" x2="1920" y2="470" stroke="rgba(160,180,215,0.033)" stroke-width="1"/>
+  <line x1="0" y1="495" x2="1920" y2="495" stroke="rgba(160,180,215,0.036)" stroke-width="1"/>
+  <line x1="0" y1="520" x2="1920" y2="520" stroke="rgba(160,180,215,0.039)" stroke-width="1"/>
+  <line x1="0" y1="545" x2="1920" y2="545" stroke="rgba(160,180,215,0.042)" stroke-width="1"/>
+  <line x1="0" y1="570" x2="1920" y2="570" stroke="rgba(160,180,215,0.045)" stroke-width="1"/>
+  <line x1="0" y1="595" x2="1920" y2="595" stroke="rgba(160,180,215,0.048)" stroke-width="1"/>
+  <line x1="0" y1="620" x2="1920" y2="620" stroke="rgba(160,180,215,0.051)" stroke-width="1"/>
+  <line x1="0" y1="645" x2="1920" y2="645" stroke="rgba(160,180,215,0.054)" stroke-width="1"/>
+  <line x1="0" y1="670" x2="1920" y2="670" stroke="rgba(160,180,215,0.057)" stroke-width="1"/>
+  <rect x="0" y="600" width="1920" height="480" fill="rgba(10,15,25,0.4)"/>
+  <radialGradient id="vig" cx="50%" cy="50%" r="70%">
+    <stop offset="0%" stop-color="transparent"/>
+    <stop offset="100%" stop-color="rgba(0,0,0,0.75)"/>
+  </radialGradient>
+  <rect width="1920" height="1080" fill="url(#vig)"/>
+  <text x="960" y="1020" font-family="monospace" font-size="10"
+    fill="rgba(60,58,54,0.25)" text-anchor="middle" letter-spacing="4">ЦЕНА ПРАВДЫ · Концовка II</text>
+  <text x="960" y="1040" font-family="monospace" font-size="9"
+    fill="rgba(40,38,34,0.18)" text-anchor="middle">замените: assets/images/bg/ending_2_pravda.jpg</text>
+</svg>

@@ -1,0 +1,1415 @@
+{
+  "id": "prologue",
+  "title": "Четыреста метров тишины",
+  "background": "black",
+  "music": "ambient_main",
+  "nodes": [
+    {
+      "id": "p_s1_01",
+      "type": "narration",
+      "text": "Гудение компрессоров здесь такое, что через неделю перестаёшь его слышать.",
+      "next": "p_s1_02"
+    },
+    {
+      "id": "p_s1_02",
+      "type": "narration",
+      "text": "Через неделю тело решает — фон. Безопасно. Тело часто ошибается в том что безопасно. Здесь — особенно.",
+      "next": "p_s1_03"
+    },
+    {
+      "id": "p_s1_03",
+      "type": "narration",
+      "text": "Через месяц начинаешь слышать его отсутствие. Это хуже. Потому что тишина здесь не бывает просто тишиной.",
+      "next": "p_s1_04"
+    },
+    {
+      "id": "p_s1_04",
+      "type": "narration",
+      "text": "Я провёл здесь три месяца. Девяносто один день. Я считал первые две недели. Потом перестал — счёт делал время длиннее.",
+      "next": "p_s1_room_reveal",
+      "bg_change": "corridor"
+    },
+    {
+      "id": "p_s1_room_reveal",
+      "type": "narration",
+      "text": "На стене ничего — потому что я боялся привыкнуть. Скажу себе: незачем. Правда другая. Здесь нет окон, нет смены света, нет ничего что напоминало бы о существовании неба.",
+      "next": "p_s1_05"
+    },
+    {
+      "id": "p_s1_05",
+      "type": "narration",
+      "text": "Только цифры на табло и воздух — переработанный, пережёванный машинами и лёгкими мертвецов.",
+      "next": "p_s1_06"
+    },
+    {
+      "id": "p_s1_06",
+      "type": "narration",
+      "text": "«Мертвецов» — сильное слово для объекта где официально никто не умирал. Официально. Я уже знаю. Просто ещё не разрешил себе знать.",
+      "next": "p_s1_07"
+    },
+    {
+      "id": "p_s1_07",
+      "type": "narration",
+      "text": "Я дышу чужой смертью и называю это работой.",
+      "next": "p_s1_siren"
+    },
+    {
+      "id": "p_s1_siren",
+      "type": "narration",
+      "sfx": "alarm",
+      "text": "Три коротких. Пауза. Три коротких. Протокол Б-2.",
+      "next": "p_s1_08"
+    },
+    {
+      "id": "p_s1_08",
+      "type": "narration",
+      "text": "Первое что почувствовал — не тревогу. Раздражение. Неправда. Первое — тревога. Острая, настоящая. Потом я накрыл её раздражением потому что с раздражением можно работать.",
+      "next": "p_s1_09"
+    },
+    {
+      "id": "p_s1_09",
+      "type": "narration",
+      "text": "Три года в ФСБ учат именно этому — называть страх правильными словами чтобы он не мешал двигаться. Раздражение — удобное слово. Удобное — не значит точное.",
+      "next": "p_s1_10"
+    },
+    {
+      "id": "p_s1_10",
+      "type": "narration",
+      "text": "Форма, оружие, дверь. Автоматически — тело делает это без участия головы.",
+      "next": "p_s1_11"
+    },
+    {
+      "id": "p_s1_11",
+      "type": "narration",
+      "text": "Четыреста метров камня над головой. Называл акклиматизацией. Пошёл работать. За три месяца система дала трещину. Теперь знаю: это просто вопрос времени и глубины.",
+      "next": "p_s2_start"
+    },
+    {
+      "id": "p_s2_start",
+      "type": "narration",
+      "background": "corridor",
+      "music": "tension",
+      "text": "Коридор пуст. Красный свет тревоги — несколько источников, перекрывают друг друга. Нет теней нигде.",
+      "next": "p_s2_01"
+    },
+    {
+      "id": "p_s2_01",
+      "type": "narration",
+      "text": "Архитектор сделал это намеренно. Или Власов попросил. Тени — это места где люди останавливаются и думают. Власов не любил когда люди думали в неположенных местах.",
+      "next": "p_s2_explore"
+    },
+    {
+      "id": "p_s2_explore",
+      "type": "choice",
+      "text": "Иду к шлюзу. Но в коридоре есть на что смотреть — если хочешь смотреть.",
+      "choices": [
+        {
+          "text": "Осмотреть стенд с инструкциями",
+          "next": "p_s2_stend",
+          "setFlag": "видел_стенд"
+        },
+        {
+          "text": "Посмотреть на групповую фотографию",
+          "next": "p_s2_photo",
+          "setFlag": "видел_фото"
+        },
+        {
+          "text": "Прочитать надпись на стене",
+          "next": "p_s2_wall",
+          "setFlag": "видел_надпись"
+        },
+        {
+          "text": "Идти к шлюзу",
+          "next": "p_s3_start"
+        }
+      ]
+    },
+    {
+      "id": "p_s2_stend",
+      "type": "narration",
+      "text": "Стандартный набор. Кто-то карандашом дописал снизу: «чего ждать?» Ответа не было. Эту надпись стирали. Она появлялась снова — одним почерком, в одном месте.",
+      "next": "p_s2_stend_2"
+    },
+    {
+      "id": "p_s2_stend_2",
+      "type": "narration",
+      "text": "Автора надписи перевели в сектор В через четыре месяца. После этого надпись больше не появлялась. Не потому что некому было писать. Потому что остальные поняли чем заканчивается.",
+      "next": "p_s2_explore_2"
+    },
+    {
+      "id": "p_s2_photo",
+      "type": "narration",
+      "text": "Первый год. Двадцать с лишним человек. Семнадцать лиц которых больше не вижу в столовой. Официально — переведены.",
+      "next": "p_s2_photo_2"
+    },
+    {
+      "id": "p_s2_photo_2",
+      "type": "narration",
+      "text": "Некоторые из них знали. Не всё — но достаточно. Улыбались потому что ещё верили что смогут справиться. Что граница между собой и работой достаточно прочная. Граница оказалась не прочной.",
+      "next": "p_s2_photo_3"
+    },
+    {
+      "id": "p_s2_photo_3",
+      "type": "narration",
+      "text": "Я смотрю на эти улыбки и узнаю их. Я улыбался так же три месяца назад когда подписывал контракт.",
+      "next": "p_s2_explore_2"
+    },
+    {
+      "id": "p_s2_wall",
+      "type": "narration",
+      "text": "«Сектор В — не ходи». Писали в спешке. Или в темноте. Буквы мелкие — на уровне моих глаз. Угол наклона такой как пишут правши когда торопятся.",
+      "next": "p_s2_wall_2"
+    },
+    {
+      "id": "p_s2_wall_2",
+      "type": "narration",
+      "text": "Я правша. Среднего роста. Совпадение. Наверное.",
+      "next": "p_s2_explore_2"
+    },
+    {
+      "id": "p_s2_explore_2",
+      "type": "choice",
+      "text": "Ещё что-то посмотреть или идти дальше?",
+      "choices": [
+        {
+          "text": "Посмотреть термостат на стене",
+          "next": "p_s2_thermo",
+          "setFlag": "видел_термостат"
+        },
+        {
+          "text": "Идти к шлюзу",
+          "next": "p_s3_start"
+        }
+      ]
+    },
+    {
+      "id": "p_s2_thermo",
+      "type": "narration",
+      "text": "Восемнадцать градусов. Всегда восемнадцать. Власов считает что при этой температуре люди работают эффективнее и меньше думают о личном. Возможно он прав. Это раздражает больше всего.",
+      "next": "p_s3_start"
+    },
+    {
+      "id": "p_s3_start",
+      "type": "narration",
+      "background": "airlock",
+      "sfx": "door_metal",
+      "text": "Власов у шлюза. Руки за спиной. Неподвижен. В красном свете — как что-то вырезанное из более старого и жёсткого мира.",
+      "next": "p_s3_01"
+    },
+    {
+      "id": "p_s3_01",
+      "type": "narration",
+      "text": "Власов всегда ждал именно так — неподвижно, с руками за спиной, будто время для него было другой субстанцией. Я всегда думал что это спокойствие. Сейчас — не уверен. Может это просто пустота.",
+      "next": "p_s3_vlasov_1"
+    },
+    {
+      "id": "p_s3_vlasov_1",
+      "type": "dialogue",
+      "character": "Власов",
+      "expression": "vlasov/cold",
+      "text": "Сектор Б вскрыт. Соколова там. Если заражена — пристрели и тащи сюда. Не заражена — тоже тащи.",
+      "next": "p_s3_choice"
+    },
+    {
+      "id": "p_s3_choice",
+      "type": "choice",
+      "text": "...",
+      "choices": [
+        {
+          "text": "«А разница?»",
+          "next": "p_s3_a",
+          "setVar": {
+            "key": "vlasov_response",
+            "value": "questioned"
+          }
+        },
+        {
+          "text": "«Что значит «вскрыт»?»",
+          "next": "p_s3_b",
+          "setVar": {
+            "key": "vlasov_response",
+            "value": "curious"
+          }
+        },
+        {
+          "text": "[Молчать и кивнуть]",
+          "next": "p_s3_c",
+          "setVar": {
+            "key": "vlasov_response",
+            "value": "silent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "p_s3_a",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "А разница?",
+      "next": "p_s3_a_vlasov",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s3_a_vlasov",
+      "type": "dialogue",
+      "character": "Власов",
+      "expression": "vlasov/contempt",
+      "text": "Разница в температуре транспортировки, Громов.",
+      "next": "p_s3_a_inner"
+    },
+    {
+      "id": "p_s3_a_inner",
+      "type": "narration",
+      "text": "Я решил что это жестокость. На самом деле он говорил буквально. Температура транспортировки биологического материала — техническая ремарка. Он имел в виду именно её. То что она звучала как приговор — моя интерпретация. Не его.",
+      "next": "p_s3_warning"
+    },
+    {
+      "id": "p_s3_b",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Что значит «вскрыт»?",
+      "next": "p_s3_b_vlasov",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s3_b_vlasov",
+      "type": "dialogue",
+      "character": "Власов",
+      "expression": "vlasov/cold",
+      "text": "Дверь открыта там где должна быть закрыта. Что именно тебя интересует в этом предложении?",
+      "next": "p_s3_b_alex"
+    },
+    {
+      "id": "p_s3_b_alex",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Причина.",
+      "next": "p_s3_b_vlasov2",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s3_b_vlasov2",
+      "type": "dialogue",
+      "character": "Власов",
+      "expression": "vlasov/cold",
+      "text": "Причина — твоя работа. Иди и выясни.",
+      "next": "p_s3_b_inner"
+    },
+    {
+      "id": "p_s3_b_inner",
+      "type": "narration",
+      "text": "Причина. Я хотел знать причину — и это была первая за три месяца фраза которую сказал из любопытства а не из протокола. Маленькая трещина в системе названий.",
+      "next": "p_s3_warning"
+    },
+    {
+      "id": "p_s3_c",
+      "type": "narration",
+      "text": "Я кивнул. Не потому что согласен — потому что так проще. Власов посмотрел на меня секунду дольше чем нужно. Проверял что-то. Я прошёл проверку. Это должно было меня успокоить. Не успокоило.",
+      "next": "p_s3_warning"
+    },
+    {
+      "id": "p_s3_warning",
+      "type": "dialogue",
+      "character": "Власов",
+      "expression": "vlasov/cold",
+      "text": "Громов. Соколова умная. Умнее чем ей полезно. Если начнёт объяснять — не слушай. Просто тащи.",
+      "next": "p_s3_inner_warning"
+    },
+    {
+      "id": "p_s3_inner_warning",
+      "type": "narration",
+      "text": "Он предупредил. Первый раз за три месяца. Где-то глубоко я почувствовал — он сам когда-то слушал. Давно. Кого-то другого. И то что услышал — осталось. «Не слушай» — совет который он хотел бы получить тогда. Никто не дал.",
+      "next": "p_s4_start"
+    },
+    {
+      "id": "p_s4_start",
+      "type": "narration",
+      "background": "sector_a",
+      "text": "Объект делился на сектора по цветам. Красная — сектор А. Жёлтая — сектор Б. Зелёная — сектор В. Серая — сектор Г.",
+      "next": "p_s4_01"
+    },
+    {
+      "id": "p_s4_01",
+      "type": "narration",
+      "text": "О секторе Г официальной информации не было. Неофициально — туда не ходили. Не потому что запрещено. Потому что те кто ходил возвращались другими. Или не возвращались.",
+      "next": "p_s4_02"
+    },
+    {
+      "id": "p_s4_02",
+      "type": "narration",
+      "text": "Я прошёл мимо серой линии и задержал взгляд — секунду, не больше. Не знаю почему. Тело знало. Тело всегда знает раньше. Я не спросил тело что именно. Стоило спросить.",
+      "next": "p_s4_minigame"
+    },
+    {
+      "id": "p_s4_minigame",
+      "type": "minigame",
+      "game": "navigation",
+      "text": "Нужно попасть в сектор Б. Три маршрута — каждый со своими рисками.",
+      "next": "p_s4_route_result"
+    },
+    {
+      "id": "p_s4_route_1",
+      "type": "narration",
+      "text": "Соболев кивнул не спрашивая. Лицо человека который научился не видеть.",
+      "setFlag": "маршрут_главный",
+      "next": "p_s5_start"
+    },
+    {
+      "id": "p_s4_route_2",
+      "type": "narration",
+      "text": "В серверной горел свет. 03:45 — там никого не должно быть. Я замедлился у окошка. Увидел спину — не узнал. Запомнил. «Потом» — ещё одно удобное слово из моей системы.",
+      "setFlag": "маршрут_технический",
+      "next": "p_s5_start"
+    },
+    {
+      "id": "p_s4_route_3",
+      "type": "narration",
+      "text": "Датчик мигнул. Я замер — три секунды. Потом лампочка погасла. Сбой системы, сказал я себе. Потом — звук. Очень тихий. Из глубины сектора.",
+      "setFlag": "маршрут_сектор_в",
+      "next": "p_s4_route_3_inner"
+    },
+    {
+      "id": "p_s4_route_3_inner",
+      "type": "narration",
+      "text": "Рассказчик молчит.",
+      "next": "p_s5_start"
+    },
+    {
+      "id": "p_s4_route_result",
+      "type": "narration",
+      "text": "Мне нужна жёлтая линия.",
+      "next": "p_s5_start"
+    },
+    {
+      "id": "p_s5_start",
+      "type": "narration",
+      "background": "lab_b",
+      "music": "lab",
+      "sfx": "door_metal",
+      "text": "Дверь в сектор Б открыта — взломана изнутри. Замок не сломан — обойдён. Кто-то знал код аварийного протокола. Это не случайность.",
+      "next": "p_s5_01"
+    },
+    {
+      "id": "p_s5_01",
+      "type": "narration",
+      "text": "Лаборатория в полумраке. Лена за столом. Компоненты разложены с аккуратностью человека у которого тремор — и который научился с этим работать.",
+      "next": "p_s5_02"
+    },
+    {
+      "id": "p_s5_02",
+      "type": "narration",
+      "text": "Она не выглядела испуганной. Она была по ту сторону страха. Там где страх уже прожит, отработан, сложен в угол. Осталось только то что делаешь. Человек по ту сторону страха не останавливается.",
+      "next": "p_s5_lena_1"
+    },
+    {
+      "id": "p_s5_lena_1",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/focused",
+      "text": "Громов. Я знала что пришлют тебя.",
+      "next": "p_s5_alex_1"
+    },
+    {
+      "id": "p_s5_alex_1",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Почему меня?",
+      "next": "p_s5_lena_2",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s5_lena_2",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/focused",
+      "text": "Потому что ты единственный здесь кто иногда выглядит так как будто думает. Остальные выполняют.",
+      "next": "p_s5_inner"
+    },
+    {
+      "id": "p_s5_inner",
+      "type": "narration",
+      "text": "Я почувствовал что-то похожее на удовлетворение. Потом — что-то похожее на тревогу. Если она права — значит я недостаточно хорошо притворялся что просто выполняю.",
+      "next": "p_s5_choice"
+    },
+    {
+      "id": "p_s5_choice",
+      "type": "choice",
+      "text": "...",
+      "choices": [
+        {
+          "text": "«Да. Собирайся.»",
+          "next": "p_s5_a",
+          "setVar": {
+            "key": "lena_first_response",
+            "value": "order"
+          }
+        },
+        {
+          "text": "«Что ты здесь делаешь в 03:45?»",
+          "next": "p_s5_b",
+          "setVar": {
+            "key": "lena_first_response",
+            "value": "question"
+          },
+          "addVar": {
+            "key": "trust_lena",
+            "value": 1
+          }
+        },
+        {
+          "text": "«Ты не заражена.»",
+          "next": "p_s5_c",
+          "setVar": {
+            "key": "lena_first_response",
+            "value": "observe"
+          },
+          "addVar": {
+            "key": "trust_lena",
+            "value": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "p_s5_a",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Власов ждёт. Собирайся.",
+      "next": "p_s5_a_lena",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s5_a_lena",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/focused",
+      "text": "Хорошо. Но сначала послушай две минуты.",
+      "next": "p_s5_a_alex"
+    },
+    {
+      "id": "p_s5_a_alex",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "У меня нет двух минут.",
+      "next": "p_s5_a_lena2",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s5_a_lena2",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/focused",
+      "text": "У всех нас нет времени. Это не повод не слушать.",
+      "next": "p_s5_monologue"
+    },
+    {
+      "id": "p_s5_b",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Что ты здесь делаешь в 03:45?",
+      "next": "p_s5_b_lena",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s5_b_lena",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/focused",
+      "text": "Заканчиваю то что должна была закончить три месяца назад. Ты знаешь что мы здесь синтезируем?",
+      "next": "p_s5_b_alex"
+    },
+    {
+      "id": "p_s5_b_alex",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Официально — адаптационные препараты.",
+      "next": "p_s5_b_lena2",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s5_b_lena2",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/sad",
+      "text": "Нет.",
+      "next": "p_s5_monologue"
+    },
+    {
+      "id": "p_s5_c",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Ты не заражена. Значит можешь идти своими ногами.",
+      "next": "p_s5_c_lena",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s5_c_lena",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/focused",
+      "text": "Власов сказал проверить заражение. Ты проверил?",
+      "next": "p_s5_c_inner"
+    },
+    {
+      "id": "p_s5_c_inner",
+      "type": "narration",
+      "text": "Я понял что нет — просто посмотрел на неё.",
+      "next": "p_s5_c_alex"
+    },
+    {
+      "id": "p_s5_c_alex",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Ты в порядке.",
+      "next": "p_s5_c_lena2",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s5_c_lena2",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/focused",
+      "text": "Да. Но не потому что мне повезло. Я знала как не заразиться. Потому что знаю что именно здесь производится.",
+      "next": "p_s5_monologue"
+    },
+    {
+      "id": "p_s5_monologue",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/sad",
+      "text": "Мы синтезируем патоген. Модифицированный. Таргетинг по генетическому маркеру — группа примерно восемьдесят миллионов человек. Носители маркера умирают. Остальные — нет.",
+      "next": "p_s5_inner_80"
+    },
+    {
+      "id": "p_s5_inner_80",
+      "type": "narration",
+      "text": "Восемьдесят миллионов. Мозг обрабатывал это как абстракцию. Слишком большое не становится реальным сразу. Потом что-то щёлкнуло. Не в голове. В груди. Физически. Восемьдесят миллионов стали людьми.",
+      "next": "p_s5_lena_3"
+    },
+    {
+      "id": "p_s5_lena_3",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Это уже готово?",
+      "next": "p_s5_lena_4",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s5_lena_4",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/sad",
+      "text": "Патоген — да. Три месяца назад. Я участвовала в синтезе.",
+      "next": "p_s5_inner_lena"
+    },
+    {
+      "id": "p_s5_inner_lena",
+      "type": "narration",
+      "text": "Она остановилась. Не ищет оправданий. Просто называет факт — тот который сама себе называет каждый день. И каждый день он весит одинаково. Я знал это ощущение. Мы были одинаковы в этом. Я это почувствовал и убрал подальше.",
+      "next": "p_s5_lena_5"
+    },
+    {
+      "id": "p_s5_lena_5",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/focused",
+      "text": "Но я сделала кое-что ещё. Параллельно. Стабилизатор. Антагонист патогена. Если синтезировать правильно — нейтрализует соединение на клеточном уровне.",
+      "next": "p_s5_alex_2"
+    },
+    {
+      "id": "p_s5_alex_2",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Это работает?",
+      "next": "p_s5_lena_6",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s5_lena_6",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/focused",
+      "text": "В теории — да. Мне нужно ещё сорок минут чтобы закончить. Если уведёшь меня сейчас — стабилизатор останется незаконченным.",
+      "next": "p_s5_explore_choice"
+    },
+    {
+      "id": "p_s5_explore_choice",
+      "type": "choice",
+      "text": "Лена ждёт ответа. Но в лаборатории есть вещи которые можно заметить — если смотреть.",
+      "choices": [
+        {
+          "text": "Посмотреть дневник на столе",
+          "next": "p_s5_diary",
+          "setFlag": "читал_дневник_Лены"
+        },
+        {
+          "text": "Посмотреть фотографию у стола",
+          "next": "p_s5_photo"
+        },
+        {
+          "text": "Посмотреть стикер на холодильнике",
+          "next": "p_s5_sticker",
+          "setFlag": "видел_стикер_Раминой"
+        },
+        {
+          "text": "Ответить Лене",
+          "next": "p_s5_decision"
+        }
+      ]
+    },
+    {
+      "id": "p_s5_diary",
+      "type": "narration",
+      "text": "Страница открыта на середине. «День 287. Синтез основного агента завершён. Я написала это и смотрю на слова. Завершён. Как будто это достижение. Восьмое января. Я думала что у меня достаточно прочная граница между собой и работой. Сегодня поняла —»",
+      "next": "p_s5_diary_inner"
+    },
+    {
+      "id": "p_s5_diary_inner",
+      "type": "narration",
+      "text": "Запись обрывается на полуслове. Я не стал переворачивать страницу. Некоторые вещи не нужно дочитывать чтобы понять.",
+      "next": "p_s5_explore_choice"
+    },
+    {
+      "id": "p_s5_photo",
+      "type": "narration",
+      "text": "Маленькая. Размытая. Две женщины. Одна — Лена, моложе чем сейчас, смеётся. Вторая — незнакомая. Я не спросил кто это. Потом пожалел. Некоторые вопросы нужно задавать пока есть кому отвечать.",
+      "next": "p_s5_explore_choice"
+    },
+    {
+      "id": "p_s5_sticker",
+      "type": "narration",
+      "text": "Маленький. Жёлтый. На нём нарисован кот — кривой, смешной. Под котом подпись: «не спрашивай». Рисунок был не Лениным. Другой почерк.",
+      "next": "p_s5_explore_choice"
+    },
+    {
+      "id": "p_s5_decision",
+      "type": "choice",
+      "text": "...",
+      "choices": [
+        {
+          "text": "«У тебя есть сорок минут.»",
+          "next": "p_s5_d1",
+          "addVar": {
+            "key": "trust_lena",
+            "value": 2
+          },
+          "setFlag": "стабилизатор_завершён"
+        },
+        {
+          "text": "«Мне нужно понять можно ли тебе доверять.»",
+          "next": "p_s5_d2",
+          "addVar": {
+            "key": "trust_lena",
+            "value": 1
+          },
+          "setFlag": "стабилизатор_завершён"
+        },
+        {
+          "text": "«Нам нужно уходить сейчас.»",
+          "next": "p_s5_d3",
+          "setFlag": "стабилизатор_не_завершён"
+        }
+      ]
+    },
+    {
+      "id": "p_s5_d1",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "У тебя есть сорок минут.",
+      "next": "p_s5_d1_lena",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s5_d1_lena",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/hope",
+      "text": "Власов...",
+      "next": "p_s5_d1_alex"
+    },
+    {
+      "id": "p_s5_d1_alex",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Власов подождёт.",
+      "next": "p_s5_d1_inner",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s5_d1_inner",
+      "type": "narration",
+      "text": "Я сказал это и почувствовал как что-то сдвинулось. Небольшое. Почти незаметное. Как будто впервые за три месяца сказал что-то от себя а не от протокола.",
+      "next": "p_s6_start"
+    },
+    {
+      "id": "p_s5_d2",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Почему я должен тебе верить?",
+      "next": "p_s5_d2_lena",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s5_d2_lena",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/focused",
+      "text": "Не должен. Что тебя убедит?",
+      "next": "p_s5_d2_alex"
+    },
+    {
+      "id": "p_s5_d2_alex",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Покажи данные.",
+      "next": "p_s5_d2_inner",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s5_d2_inner",
+      "type": "narration",
+      "text": "Она открыла защищённый раздел терминала. Схемы патогена, протоколы, цифры. Всё реально. Всё ужасно.",
+      "next": "p_s5_d2_alex2"
+    },
+    {
+      "id": "p_s5_d2_alex2",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Работай. У тебя сорок минут.",
+      "next": "p_s6_start",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s5_d3",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Нам нужно уходить сейчас.",
+      "next": "p_s5_d3_lena",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s5_d3_lena",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/scared",
+      "text": "Если уйдём — Арис закончит сам. У него есть мои записи.",
+      "next": "p_s5_d3_alex"
+    },
+    {
+      "id": "p_s5_d3_alex",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Тогда уничтожь записи.",
+      "next": "p_s5_d3_lena2",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s5_d3_lena2",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/focused",
+      "text": "Да. Это я могу.",
+      "next": "p_s5_d3_inner"
+    },
+    {
+      "id": "p_s5_d3_inner",
+      "type": "narration",
+      "text": "Лена начинает удалять файлы. Пока она удаляет — я стою у двери.",
+      "next": "p_s6_start"
+    },
+    {
+      "id": "p_s6_start",
+      "type": "narration",
+      "text": "Пока Лена работает — в конце коридора за армированным стеклом движение.",
+      "next": "p_s6_mikhail_desc"
+    },
+    {
+      "id": "p_s6_mikhail_desc",
+      "type": "narration",
+      "text": "Михаил. Сидит на полу. Смотрит в потолок. Потом — поворачивает голову точно на Алекса. Как будто знал что подойдут. Я искал в его взгляде признаки безумия. Не нашёл — потому что искал не то.",
+      "next": "p_s6_mikh_1"
+    },
+    {
+      "id": "p_s6_mikh_1",
+      "type": "dialogue",
+      "character": "Михаил",
+      "expression": "mikhail/lucid",
+      "text": "Вы новый?",
+      "next": "p_s6_alex_1"
+    },
+    {
+      "id": "p_s6_alex_1",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Нет. Три месяца здесь.",
+      "next": "p_s6_mikh_2",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s6_mikh_2",
+      "type": "dialogue",
+      "character": "Михаил",
+      "expression": "mikhail/lucid",
+      "text": "Три месяца — новый. Я здесь с две тысячи девятнадцатого. Вы знаете сколько здесь было людей до вас?",
+      "next": "p_s6_alex_2"
+    },
+    {
+      "id": "p_s6_alex_2",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Нет.",
+      "next": "p_s6_mikh_3",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s6_mikh_3",
+      "type": "dialogue",
+      "character": "Михаил",
+      "expression": "mikhail/lucid",
+      "text": "Я знаю. Я считал. Вы не хотите знать число.",
+      "next": "p_s6_inner"
+    },
+    {
+      "id": "p_s6_inner",
+      "type": "narration",
+      "text": "Нет. Не хочу. Некоторые числа меняют то как смотришь на стены. А мне здесь ещё жить. Или не жить — он добавил это вслух. Я решил что это симптом. Это была точность.",
+      "next": "p_s6_mikh_4"
+    },
+    {
+      "id": "p_s6_mikh_4",
+      "type": "dialogue",
+      "character": "Михаил",
+      "expression": "mikhail/lucid",
+      "text": "Соколова заканчивает стабилизатор?",
+      "next": "p_s6_alex_3"
+    },
+    {
+      "id": "p_s6_alex_3",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Откуда ты знаешь?",
+      "next": "p_s6_mikh_5",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s6_mikh_5",
+      "type": "dialogue",
+      "character": "Михаил",
+      "expression": "mikhail/lucid",
+      "text": "Гамма-компонент пахнет озоном. Через вентиляцию. Вы его откроете?",
+      "next": "p_s6_choice"
+    },
+    {
+      "id": "p_s6_choice",
+      "type": "choice",
+      "text": "...",
+      "choices": [
+        {
+          "text": "«Не сейчас.»",
+          "next": "p_s6_no1",
+          "setFlag": "михаил_не_освобождён_пролог"
+        },
+        {
+          "text": "«Я не имею права.»",
+          "next": "p_s6_no2",
+          "setFlag": "михаил_не_освобождён_пролог"
+        },
+        {
+          "text": "[Ввести код 7-7-4-1 и открыть камеру]",
+          "next": "p_s6_open",
+          "setFlag": "михаил_освобождён_пролог",
+          "addVar": {
+            "key": "clarity",
+            "value": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "p_s6_no1",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Не сейчас.",
+      "next": "p_s6_no1_mikh",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s6_no1_mikh",
+      "type": "dialogue",
+      "character": "Михаил",
+      "expression": "mikhail/neutral",
+      "text": "Понятно. Тогда запомните одно: сектор Г — не идите туда первым. Ждите пока что-то само не выйдет.",
+      "next": "p_s6_no1_mikh2"
+    },
+    {
+      "id": "p_s6_no1_mikh2",
+      "type": "dialogue",
+      "character": "Михаил",
+      "expression": "mikhail/lucid",
+      "text": "Оно выйдет.",
+      "next": "p_s7_start"
+    },
+    {
+      "id": "p_s6_no2",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Я не имею права открыть эту камеру.",
+      "next": "p_s6_no2_mikh",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s6_no2_mikh",
+      "type": "dialogue",
+      "character": "Михаил",
+      "expression": "mikhail/lucid",
+      "text": "Права. Интересное слово для этого места. Когда придёт время выбирать между тем что правильно и тем что безопасно — помните: безопасно здесь иллюзия. Правильно — хотя бы реально.",
+      "next": "p_s7_start"
+    },
+    {
+      "id": "p_s6_open",
+      "type": "narration",
+      "text": "Код — 7-7-4-1. Стандартный аварийный. Я знал его потому что учил протоколы. Использовал потому что он смотрел на меня как на человека а не на охранника. Глупая причина. Настоящая причина.",
+      "next": "p_s6_open_door"
+    },
+    {
+      "id": "p_s6_open_door",
+      "type": "narration",
+      "sfx": "airlock",
+      "text": "Замок щёлкнул. Дверь открылась с пневматическим выдохом.",
+      "next": "p_s6_mikh_out"
+    },
+    {
+      "id": "p_s6_mikh_out",
+      "type": "dialogue",
+      "character": "Михаил",
+      "expression": "mikhail/lucid",
+      "text": "Спасибо.",
+      "next": "p_s6_alex_open"
+    },
+    {
+      "id": "p_s6_alex_open",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Не благодари. Просто не делай ничего что заставит меня пожалеть.",
+      "next": "p_s6_mikh_promise",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s6_mikh_promise",
+      "type": "dialogue",
+      "character": "Михаил",
+      "expression": "mikhail/lucid",
+      "text": "Это я не могу обещать. Но постараюсь.",
+      "next": "p_s6_mikh_secret"
+    },
+    {
+      "id": "p_s6_mikh_secret",
+      "type": "dialogue",
+      "character": "Михаил",
+      "expression": "mikhail/lucid",
+      "text": "Сектор Г. Там есть сервер — в самой глубине, за дверью без маркировки. Арис думает что о нём никто не знает. Там координаты получателя образца. Того что ушёл три недели назад.",
+      "next": "p_s6_alex_secret"
+    },
+    {
+      "id": "p_s6_alex_secret",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Какого образца?",
+      "next": "p_s6_mikh_last",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s6_mikh_last",
+      "type": "dialogue",
+      "character": "Михаил",
+      "expression": "mikhail/neutral",
+      "text": "Спросите Соколову. Она знает.",
+      "next": "p_s6_sector_v_check"
+    },
+    {
+      "id": "p_s6_sector_v_check",
+      "type": "narration",
+      "text": "Михаил уходит в коридор. Медленно — как человек у которого нет причин торопиться.",
+      "next": "p_s7_start",
+      "conditionalNext": {
+        "flag": "маршрут_сектор_в",
+        "true": "p_s6_sector_v_hidden"
+      }
+    },
+    {
+      "id": "p_s6_sector_v_hidden",
+      "type": "dialogue",
+      "character": "Михаил",
+      "expression": "mikhail/lucid",
+      "text": "Тот звук в секторе В. Который вы слышали когда шли.",
+      "next": "p_s6_sv_alex"
+    },
+    {
+      "id": "p_s6_sv_alex",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Что это было?",
+      "next": "p_s6_sv_mikh",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s6_sv_mikh",
+      "type": "dialogue",
+      "character": "Михаил",
+      "expression": "mikhail/neutral",
+      "text": "Кто-то кому не нашлось места в секторе Г.",
+      "next": "p_s6_sv_inner"
+    },
+    {
+      "id": "p_s6_sv_inner",
+      "type": "narration",
+      "text": "Рассказчик молчит. Я тоже.",
+      "next": "p_s7_start"
+    },
+    {
+      "id": "p_s7_start",
+      "type": "narration",
+      "background": "lab_b",
+      "music": "aris_theme",
+      "text": "У персонала было суеверие: если видишь Ариса — кто-то умрёт до конца дня. Статистика подтверждала. Но статистика не говорила главного: кто-то умирал потому что Арис появлялся. Это разные причинно-следственные связи.",
+      "next": "p_s7_aris_enter"
+    },
+    {
+      "id": "p_s7_aris_enter",
+      "type": "dialogue",
+      "character": "Арис",
+      "expression": "aris/smile",
+      "text": "Алекс Громов. Не ожидал вас здесь в это время.",
+      "next": "p_s7_inner_aris"
+    },
+    {
+      "id": "p_s7_inner_aris",
+      "type": "narration",
+      "text": "Он ожидал. Это была первая его ложь в эту ночь. Маленькая — почти вежливая. «Не ожидал» — способ дать человеку почувствовать что он контролирует ситуацию. Я контролировал ситуацию примерно как камень на дне контролирует реку.",
+      "next": "p_s7_aris_read"
+    },
+    {
+      "id": "p_s7_aris_read",
+      "type": "narration",
+      "text": "Арис смотрит на стол. Восемь секунд. Читает расположение контейнеров.",
+      "next": "p_s7_aris_stab"
+    },
+    {
+      "id": "p_s7_aris_stab",
+      "type": "dialogue",
+      "character": "Арис",
+      "expression": "aris/interested",
+      "text": "Стабилизатор.",
+      "next": "p_s7_choice"
+    },
+    {
+      "id": "p_s7_choice",
+      "type": "choice",
+      "text": "...",
+      "choices": [
+        {
+          "text": "«Власов ждёт. Мы уходим.»",
+          "next": "p_s7_a"
+        },
+        {
+          "text": "«Одна минута.»",
+          "next": "p_s7_b"
+        },
+        {
+          "text": "[Встать между Арисом и Леной]",
+          "next": "p_s7_c",
+          "addVar": {
+            "key": "trust_lena",
+            "value": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "p_s7_a",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Власов ждёт.",
+      "next": "p_s7_a_aris",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s7_a_aris",
+      "type": "dialogue",
+      "character": "Арис",
+      "expression": "aris/smile",
+      "text": "Разумеется.",
+      "next": "p_s7_a_pass"
+    },
+    {
+      "id": "p_s7_a_pass",
+      "type": "dialogue",
+      "character": "Арис",
+      "expression": "aris/interested",
+      "text": "Громов. У вас хороший инстинкт. Берегите его — здесь это редкость.",
+      "next": "p_s7_a_inner"
+    },
+    {
+      "id": "p_s7_a_inner",
+      "type": "narration",
+      "text": "Я не знал было ли это предупреждением, комплиментом или наблюдением. Возможно всем тремя. С Арисом всегда так.",
+      "next": "p_s8_start"
+    },
+    {
+      "id": "p_s7_b",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Одна минута.",
+      "next": "p_s7_b_aris",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s7_b_aris",
+      "type": "dialogue",
+      "character": "Арис",
+      "expression": "aris/smile",
+      "text": "Достаточно.",
+      "next": "p_s7_b_inner"
+    },
+    {
+      "id": "p_s7_b_inner",
+      "type": "narration",
+      "text": "Арис подходит к Лене. Говорит тихо — я слышу фрагменты: «...ваша работа важна...», «...не стоит осложнять...» Лена не отвечает. Что-то в её лице изменилось — стало плотнее. Как будто она приняла решение которое уже нельзя отменить.",
+      "next": "p_s7_b_aris2"
+    },
+    {
+      "id": "p_s7_b_aris2",
+      "type": "dialogue",
+      "character": "Арис",
+      "expression": "aris/smile",
+      "text": "Всё в порядке. Удачи, Громов.",
+      "next": "p_s8_start"
+    },
+    {
+      "id": "p_s7_c",
+      "type": "narration",
+      "text": "Я сделал шаг — не агрессивно. Просто оказался между ними.",
+      "next": "p_s7_c_aris"
+    },
+    {
+      "id": "p_s7_c_aris",
+      "type": "dialogue",
+      "character": "Арис",
+      "expression": "aris/interested",
+      "text": "Интересно.",
+      "next": "p_s7_c_inner"
+    },
+    {
+      "id": "p_s7_c_inner",
+      "type": "narration",
+      "text": "«Интересно» — его слово для того что он не предсказал. В личном деле на меня стояло «управляемый, исполнительный». Он пересматривал оценку в реальном времени.",
+      "next": "p_s7_c_alex"
+    },
+    {
+      "id": "p_s7_c_alex",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Власов ждёт. Нет времени на разговоры.",
+      "next": "p_s7_c_aris2",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s7_c_aris2",
+      "type": "dialogue",
+      "character": "Арис",
+      "expression": "aris/smile",
+      "text": "Да. Конечно. Ещё увидимся, Алекс. Скоро.",
+      "next": "p_s7_c_inner2"
+    },
+    {
+      "id": "p_s7_c_inner2",
+      "type": "narration",
+      "text": "«Скоро» — не обещание. Констатация. Как будто будущее для него уже написано и он просто сообщал мне содержание главы до которой я ещё не дочитал.",
+      "next": "p_s7_c_lena"
+    },
+    {
+      "id": "p_s7_c_lena",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/focused",
+      "text": "Ты знаешь что только что сделал?",
+      "next": "p_s7_c_alex2"
+    },
+    {
+      "id": "p_s7_c_alex2",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Нет.",
+      "next": "p_s7_c_lena2",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s7_c_lena2",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/focused",
+      "text": "Ты выбрал сторону.",
+      "next": "p_s7_c_final"
+    },
+    {
+      "id": "p_s7_c_final",
+      "type": "narration",
+      "text": "Она была права. Я выбрал до того как осознал что выбираю. Тело снова решило раньше головы. За три месяца — первый раз когда я не подавил это.",
+      "next": "p_s8_start"
+    },
+    {
+      "id": "p_s8_start",
+      "type": "narration",
+      "background": "airlock",
+      "sfx": "door_metal",
+      "text": "Власов у терминала. Поворачивается. Смотрит на Лену — как на объект инвентаризации.",
+      "next": "p_s8_vlasov"
+    },
+    {
+      "id": "p_s8_vlasov",
+      "type": "dialogue",
+      "character": "Власов",
+      "expression": "vlasov/cold",
+      "text": "Заражена?",
+      "next": "p_s8_alex"
+    },
+    {
+      "id": "p_s8_alex",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Нет.",
+      "next": "p_s8_vlasov2",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s8_vlasov2",
+      "type": "dialogue",
+      "character": "Власов",
+      "expression": "vlasov/cold",
+      "text": "Стабилизатор?",
+      "next": "p_s8_branch"
+    },
+    {
+      "id": "p_s8_branch",
+      "type": "auto",
+      "text": "...",
+      "next": "p_s8_stab_yes",
+      "conditionalNext": {
+        "flag": "стабилизатор_не_завершён",
+        "true": "p_s8_stab_no"
+      }
+    },
+    {
+      "id": "p_s8_stab_yes",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Она заканчивала работу.",
+      "next": "p_s8_yes_vlasov",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s8_yes_vlasov",
+      "type": "dialogue",
+      "character": "Власов",
+      "expression": "vlasov/cold",
+      "text": "Закончила?",
+      "next": "p_s8_yes_lena"
+    },
+    {
+      "id": "p_s8_yes_lena",
+      "type": "dialogue",
+      "character": "Лена",
+      "expression": "lena/neutral",
+      "text": "Почти.",
+      "next": "p_s8_yes_vlasov2"
+    },
+    {
+      "id": "p_s8_yes_vlasov2",
+      "type": "dialogue",
+      "character": "Власов",
+      "expression": "vlasov/cold",
+      "text": "«Почти» здесь не считается. Свободен до шести. Брифинг в секторе А.",
+      "next": "p_epilogue"
+    },
+    {
+      "id": "p_s8_stab_no",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Она уничтожала данные.",
+      "next": "p_s8_no_vlasov",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s8_no_vlasov",
+      "type": "dialogue",
+      "character": "Власов",
+      "expression": "vlasov/cold",
+      "text": "Ты помешал?",
+      "next": "p_s8_no_alex"
+    },
+    {
+      "id": "p_s8_no_alex",
+      "type": "dialogue",
+      "character": "Алекс",
+      "text": "Я обнаружил факт.",
+      "next": "p_s8_no_vlasov2",
+      "expression": "alex/neutral"
+    },
+    {
+      "id": "p_s8_no_vlasov2",
+      "type": "dialogue",
+      "character": "Власов",
+      "expression": "vlasov/contempt",
+      "text": "Глупо, Соколова. У нас есть резервные копии.",
+      "next": "p_s8_no_end"
+    },
+    {
+      "id": "p_s8_no_end",
+      "type": "dialogue",
+      "character": "Власов",
+      "expression": "vlasov/cold",
+      "text": "Свободен до шести. Брифинг в секторе А.",
+      "next": "p_epilogue"
+    },
+    {
+      "id": "p_epilogue",
+      "type": "narration",
+      "background": "corridor",
+      "music": "ambient_main",
+      "text": "04:19 по внутреннему времени. Я стоял в коридоре и слушал гудение компрессоров.",
+      "next": "p_epilogue_2"
+    },
+    {
+      "id": "p_epilogue_2",
+      "type": "narration",
+      "text": "Восемьдесят миллионов. Лена с тремором в левой руке. Михаил который считал людей потому что больше некому. Арис и слово «скоро».",
+      "next": "p_epilogue_3"
+    },
+    {
+      "id": "p_epilogue_3",
+      "type": "narration",
+      "text": "Я думал о них — и первый раз за три месяца думал не как о переменных в рабочей ситуации. Просто думал. О людях.",
+      "next": "p_epilogue_4"
+    },
+    {
+      "id": "p_epilogue_4",
+      "type": "narration",
+      "text": "Есть точка после которой молчать — это тоже выбор. Три месяца я называл это раздражением. Усталостью. Акклиматизацией. Сейчас у этого было правильное имя.",
+      "next": "p_epilogue_5"
+    },
+    {
+      "id": "p_epilogue_5",
+      "type": "narration",
+      "text": "Через двадцать шесть минут я приму решение которое сделает всё остальное неизбежным. Я этого ещё не знаю. Но что-то внутри — уже знает. Оно всегда знало. Я просто наконец начал слушать.",
+      "next": "p_end"
+    },
+    {
+      "id": "p_end",
+      "type": "narration",
+      "text": "— Конец пролога —",
+      "next": null,
+      "nextScene": "act1",
+      "chapterTitle": { "label": "Акт 1", "title": "Сдвиг" }
+    }
+  ]
+}

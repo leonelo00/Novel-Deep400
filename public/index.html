@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ГЛУБИНА 400</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!-- ГЛАВНОЕ МЕНЮ -->
+<div id="main-menu">
+  <canvas id="menu-canvas"></canvas>
+  <div id="menu-bg-overlay"></div>
+  <div id="menu-scanlines"></div>
+  <div id="menu-content">
+    <div class="menu-logo">ГЛУБИНА <span>400</span></div>
+    <div class="menu-subtitle">Объект «Литораль» · −400 м · 2031</div>
+    <button class="menu-btn" id="btn-new-game">Новая игра</button>
+    <button class="menu-btn" id="btn-continue" disabled>Продолжить</button>
+    <button class="menu-btn" id="btn-load-menu">Загрузить</button>
+    <button class="menu-btn" id="btn-settings-menu">Настройки</button>
+  </div>
+</div>
+
+<!-- ИГРОВОЙ ЭКРАН -->
+<div id="game-screen" class="hidden">
+  <!-- Фоны -->
+  <canvas id="fallback-bg"></canvas>
+  <div id="game-background"></div>
+
+  <!-- Спрайт персонажа -->
+  <img id="char-sprite" class="hidden" alt="">
+
+  <!-- Диалоговый блок -->
+  <div id="dialogue-box">
+    <div id="char-name-wrap">
+      <span id="char-name"></span>
+      <span id="char-name-line"></span>
+    </div>
+    <div id="dialogue-inner">
+      <div id="dialogue-text"></div>
+      <div id="dialogue-skip">[ пропуск ]</div>
+      <div id="dialogue-advance">▶ ▶ ▶</div>
+    </div>
+  </div>
+
+  <!-- Выборы -->
+  <div id="choices-container" class="hidden"></div>
+
+  <!-- Тулбар (строго id="game-toolbar") -->
+  <div id="game-toolbar">
+    <button class="tool-btn" id="btn-auto">авто</button>
+    <button class="tool-btn" id="btn-history">журнал</button>
+    <button class="tool-btn" id="btn-save">сохранить</button>
+    <button class="tool-btn" id="btn-load">загрузить</button>
+    <button class="tool-btn" id="btn-settings">настройки</button>
+    <button class="tool-btn" id="btn-menu">меню</button>
+  </div>
+
+  <!-- Слой мини-игр -->
+  <div id="minigame-layer" class="hidden"></div>
+</div>
+
+<!-- ОВЕРЛЕЙ (сохранения / настройки) -->
+<div id="menu-overlay" class="hidden">
+  <div id="menu-content-inner"></div>
+</div>
+
+<!-- ЭКРАН ГЛАВЫ -->
+<div id="chapter-screen">
+  <div id="chapter-label"></div>
+  <div id="chapter-title"></div>
+  <div id="chapter-line"></div>
+</div>
+
+<!-- ЗАГРУЗОЧНЫЙ ЭКРАН -->
+<div id="loading-screen">
+  <div id="loading-dots">загрузка</div>
+</div>
+
+<!-- УВЕДОМЛЕНИЕ -->
+<div id="notification"></div>
+
+<!-- ПЕРЕХОД -->
+<div id="scene-transition"></div>
+
+<script src="/js/browser-compat.js"></script>
+<script src="/js/engine.js"></script>
+<script src="/js/menu-bg.js"></script>
+<script src="/js/minigame-navigation.js"></script>
+<script src="/js/minigame-synthesis.js"></script>
+<script src="/js/minigame-archive.js"></script>
+<script src="/js/minigame-fragments.js"></script>
+<script src="/js/minigame-interrogation.js"></script>
+<script src="/js/minigame-interference.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>

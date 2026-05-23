@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0c0804"/>
+  <defs>
+    <pattern id="g" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0L0 0 0 60" fill="none" stroke="rgba(200,192,176,0.02)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g)"/>
+  <line x1="960" y1="500" x2="1310" y2="500" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="1292" y2="608" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="1243" y2="705" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="1165" y2="783" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="1068" y2="832" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="960" y2="850" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="851" y2="832" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="754" y2="783" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="676" y2="705" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="627" y2="608" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="610" y2="500" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="627" y2="391" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="676" y2="294" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="754" y2="216" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="851" y2="167" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="959" y2="150" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="1068" y2="167" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="1165" y2="216" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="1243" y2="294" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <line x1="960" y1="500" x2="1292" y2="391" stroke="rgba(200,100,30,0.05)" stroke-width="1.5"/>
+  <circle cx="960" cy="500" r="60" fill="none" stroke="rgba(200,100,30,0.04)" stroke-width="1"/>
+  <circle cx="960" cy="500" r="130" fill="none" stroke="rgba(200,100,30,0.04)" stroke-width="1"/>
+  <circle cx="960" cy="500" r="220" fill="none" stroke="rgba(200,100,30,0.04)" stroke-width="1"/>
+  <circle cx="960" cy="500" r="340" fill="none" stroke="rgba(200,100,30,0.04)" stroke-width="1"/>
+  <radialGradient id="vig" cx="50%" cy="50%" r="70%">
+    <stop offset="0%" stop-color="transparent"/>
+    <stop offset="100%" stop-color="rgba(0,0,0,0.75)"/>
+  </radialGradient>
+  <rect width="1920" height="1080" fill="url(#vig)"/>
+  <text x="960" y="1020" font-family="monospace" font-size="10"
+    fill="rgba(60,58,54,0.25)" text-anchor="middle" letter-spacing="4">ПЕПЕЛ · Акт II</text>
+  <text x="960" y="1040" font-family="monospace" font-size="9"
+    fill="rgba(40,38,34,0.18)" text-anchor="middle">замените: assets/images/bg/ending_pepel.jpg</text>
+</svg>

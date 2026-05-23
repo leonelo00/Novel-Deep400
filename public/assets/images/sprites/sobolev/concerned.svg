@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="768" viewBox="0 0 512 768">
+  <rect width="512" height="768" fill="none"/>
+  <ellipse cx="256" cy="180" rx="70" ry="80" fill="#5a5a4a" opacity="0.15" stroke="#5a5a4a" stroke-width="1.5"/>
+  <rect x="176" y="250" width="160" height="300" rx="8" fill="#5a5a4a" opacity="0.1" stroke="#5a5a4a" stroke-width="1"/>
+  <rect x="136" y="260" width="50" height="180" rx="6" fill="#5a5a4a" opacity="0.08" stroke="#5a5a4a" stroke-width="1"/>
+  <rect x="326" y="260" width="50" height="180" rx="6" fill="#5a5a4a" opacity="0.08" stroke="#5a5a4a" stroke-width="1"/>
+  <rect x="196" y="545" width="50" height="180" rx="6" fill="#5a5a4a" opacity="0.08" stroke="#5a5a4a" stroke-width="1"/>
+  <rect x="266" y="545" width="50" height="180" rx="6" fill="#5a5a4a" opacity="0.08" stroke="#5a5a4a" stroke-width="1"/>
+  <text x="256" y="370" font-family="monospace" font-size="13" fill="#5a5a4a" text-anchor="middle" opacity="0.6" letter-spacing="2">SOBOLEV</text>
+  <text x="256" y="395" font-family="monospace" font-size="11" fill="#3d3a36" text-anchor="middle" letter-spacing="1">concerned / взволнованный</text>
+  <text x="256" y="430" font-family="monospace" font-size="9" fill="#2a2a3a" text-anchor="middle">sprites/sobolev/concerned.png</text>
+</svg>

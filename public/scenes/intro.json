@@ -1,0 +1,14 @@
+{
+  "id": "intro",
+  "background": "black",
+  "music": "ambient_main",
+  "nodes": [
+    {
+      "id": "intro_start",
+      "type": "auto",
+      "text": "",
+      "nextScene": "prologue",
+      "chapterTitle": { "label": "Пролог", "title": "Четыреста метров тишины" }
+    }
+  ]
+}
