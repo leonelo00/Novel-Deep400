@@ -432,6 +432,22 @@ const ENDING_DATA = {
       nameWrap.style.display = 'none';
     }
 
+    // Если expression не задан — подставляем дефолтный neutral по имени персонажа
+    if (!expression && character) {
+      const defaultExpressions = {
+        'алекс':     'alex/neutral',
+        'лена':      'lena/neutral',
+        'власов':    'vlasov/neutral',
+        'арис':      'aris/neutral',
+        'михаил':    'mikhail/neutral',
+        'горбатова': 'gorbatova/neutral',
+        'скляров':   'sklyarov/neutral',
+        'соболев':   'sobolev/neutral',
+        'ермолов':   'ermolov/neutral',
+      };
+      expression = defaultExpressions[character.toLowerCase().trim()] || null;
+    }
+
     if (expression && sprite) {
       this._loadSprite(sprite, expression);
       sprite.classList.remove('hidden');
